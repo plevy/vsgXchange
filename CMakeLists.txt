@@ -20,6 +20,7 @@ if (VULKAN_SDK)
     set(ENV{VULKAN_SDK} ${VULKAN_SDK})
 endif()
 
+find_package(glslang)
 set(VSG_MIN_VERSION 1.0.3)
 find_package(vsg ${VSG_MIN_VERSION})
 
